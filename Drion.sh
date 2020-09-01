@@ -15,7 +15,7 @@ rsync -rvhP ./ /usr/src/rtl88x2bu-${VER}
 dkms add -m rtl88x2bu -v ${VER}
 dkms build -m rtl88x2bu -v ${VER}
 dkms install -m rtl88x2bu -v ${VER}
-echo 88x2bu >> /etc/modules
+echo rtl88x2bu >> /etc/modules
 
 
 # Configure hostapd
